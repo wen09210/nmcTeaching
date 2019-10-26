@@ -1,0 +1,55 @@
+body {
+	background-color: #191613;
+}
+
+header.header {
+	color: #ECC9AF;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.peopleSection {
+	display: flex;
+	width: 100%;
+	max-width: 880px;
+	margin: 0 auto;
+	flex-wrap: wrap;
+
+}
+
+.people {
+	width: 33%;
+	text-align: center;
+	padding-bottom: 70px;
+	
+	a{
+		position: relative;
+		display: block;
+	}
+
+	img {
+		max-width: 200px;
+		max-height: 200px;
+	}
+
+	.word {
+		color: #fff;
+		width: 200px;
+		height: 200px;
+		border-radius: 100px;
+		position: absolute;
+		    top: 50px;
+			left: 50px;
+			opacity: 0;
+	}
+	&:hover{
+		.word{
+			opacity: 1;
+			transition: all ease-in .3s;
+		}
+		img{
+			opacity: .5;
+		}
+	}
+}
